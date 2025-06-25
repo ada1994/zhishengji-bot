@@ -3,7 +3,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # 请将 YOUR_TOKEN 替换为你的 BotFather Token
-token = "7767787280:AAExy7UspZ9EFd33d1lCVJcxIEfQpjb0c2U"
+import os
+token = os.environ.get("TOKEN")
 
 WELCOME_TEXT = (
     "您好，欢迎咨询直升机/机票/旅游业务。\n"
